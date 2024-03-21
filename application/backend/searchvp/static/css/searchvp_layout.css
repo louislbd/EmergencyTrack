@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+button {
+    width: 100px;
+    margin: 1px;
+}
+
+img {
+    width: 200px;
+    float: right;
+}
+
+div.wrapper {
+    width: 80%;
+}
+
+div.navigation {
+    float: left;
+    width: 20%;
+}
+
+div.info {
+    text-align: left;
+    float: right;
+    width: 75%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1px 4px 1px 4px;
+}
+
+th {
+    border-bottom: 1pt solid black;
+}
+
+table td + td, table th + th {
+    border-left: 1pt solid black;
+}

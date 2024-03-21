@@ -1,0 +1,41 @@
+body {
+    text-align: center
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+button {
+    width: 100px;
+    margin: 1px;
+}
+
+img {
+    width: 200px;
+    float: right;
+}
+
+div.wrapper {
+    width: 80%;
+}
+
+div.navigation {
+    float: left;
+    width: 20%;
+}
+
+div.info {
+    text-align: left;
+    float: right;
+    width: 75%;
+
+}

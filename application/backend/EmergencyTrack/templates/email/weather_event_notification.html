@@ -1,0 +1,14 @@
+{% extends "email/email_base_template.html" %}
+
+{% block content %}
+<h3>New extrem weather event in <b>{{weather_event.county.county_name}}</b>!</h3>
+        <div class="details">
+            Details: <br>
+            Location name: {{weather_event.location_name}}<br>
+            Event type: {{weather_event.event_type}}<br>
+            Estimated Date and Time: {{weather_event.estimated_datetime}}<br>
+            Event radius: {{weather_event.event_radius}}<br>
+            Instructions: {{weather_event.instructions_for_public}}<br>
+            Evacuation Level: {{weather_event.level_of_evacuation}}<br>
+        </div>
+{% endblock %}

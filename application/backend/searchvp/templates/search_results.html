@@ -1,0 +1,63 @@
+{% extends 'search_base.html' %}
+
+{% block content %}
+    {% if searched %}
+        <h2> Results for "{{searched}}" in {{category}}</h2>
+    {% else %}
+        <h2> Results for all data in {{category}}</h2>
+    {% endif %}
+
+    <br>
+
+    {% if results %}
+        {% if category == "countys" %}
+            <table>
+                <tr>
+                    <th> County </th>
+                    <th style="text-align: right"> Population </th>
+                </tr>
+                {% for result in results %}
+                    <tr>
+                        <td> {{ result.county_name }} </td>
+                        <td style="text-align: right"> {{ result.county_population }} </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% elif category == "users" %}
+            <table>
+                <tr>
+                    <th> Icon </th>
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> Email </th>
+                    <th> Account type </th>
+                </tr>
+                {% for result in results %}
+                    <tr>
+                        <td>
+                            {% if result.user_icon %}
+                                {% load static %}
+                                <img style="height:50px; width:auto;" src="static/user_profiles/{{ result.user_icon }}" alt="Profile of {{ result.first_name }}">
+                            {% endif %}
+                        </td>
+                        <td> {{ result.first_name }} </td>
+                        <td> {{ result.last_name }} </td>
+                        <td> {{ result.email }} </td>
+                        <td>
+                            {% if result.account_type == 2%}
+                                Admin
+                            {% elif result.account_type == 1%}
+                                Officer
+                            {% else %}
+                                Citizen
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    {% else %}
+        <p> No results found </p>
+    {% endif %}
+
+{% endblock %}

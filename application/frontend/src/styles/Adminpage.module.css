@@ -1,0 +1,57 @@
+.adminpageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+}
+
+.leftHalf {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.board {
+  flex: 1;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.board td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.rightHalf {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollingButton select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.button {
+  width: 50%;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.map-container {
+  flex: 1;
+  height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .leftHalf,
+  .rightHalf {
+    flex: 100%;
+    border: none;
+    padding: 10px;
+  }
+}

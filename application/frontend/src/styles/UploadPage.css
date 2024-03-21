@@ -1,0 +1,40 @@
+/* Revised UploadPage.css */
+
+.uploadBox {
+  background-color: #fff; /* White background, matching the site's theme */
+  border: 2px solid #ff4b2b; /* Bright red border for consistency with Navbar */
+  padding: 20px;
+  margin: auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.uploadBox h1 {
+  color: #ff4b2b; /* Bright red color, consistent with Navbar */
+  font-weight: bold;
+}
+
+.uploadBox input[type="file"] {
+  margin: 10px 0;
+}
+
+.uploadBox button {
+  background-color: #ff4b2b; /* Bright red background, similar to Navbar */
+  color: #fff; /* White text, like Navbar */
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold; /* Consistent with Navbar's text style */
+}
+
+.uploadBox button:hover {
+  background-color: #e84118; /* Slightly darker red on hover */
+}
+
+.emergencyTrackInfo {
+  background-color: #fff; /* White background for readability */
+  color: #000; /* Black text for contrast */
+  padding: 15px;
+  border-top: 2px solid #ff4b2b; /* Bright red top border for visual consistency */
+  font-size: 0.9em;
+}

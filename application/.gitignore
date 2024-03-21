@@ -1,0 +1,23 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore build artifacts
+build/
+dist/
+backend/about/__pycache__
+backend/EmergencyTrack/__pycache__/
+backend/EmergencyTrack/__pycache__/
+backend/EmergencyTrack/__pycache__/
+backend/EmergencyTrack/__pycache__/
+backend/about/__pycache__/
+application/backend/about/migrations/__pycache__/
+application/backend/searchvp/__pycache__/
+application/backend/searchvp/migrations/__pycache__/
+
+__pycache__/

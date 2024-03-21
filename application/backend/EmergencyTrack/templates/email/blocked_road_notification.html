@@ -1,0 +1,14 @@
+{% extends "email/email_base_template.html" %}
+
+{% block content %}
+<h3>New blocked road in <b>{{blocked_road.county.county_name}}</b>!</h3>
+        <div class="details">
+            Details: <br>
+            Road name: {{blocked_road.road_name}}<br>
+            Reason: {{blocked_road.reason}}<br>
+            Intersections: {{blocked_road.intersection1}} to {{blocked_road.intersection2}}<br>
+            Starting Date and Time: {{blocked_road.starting_datetime}}<br>
+            Ending Date and Time: {{blocked_road.ending_datetime}}<br>
+            Additional Information: {{blocked_road.informations_for_public}}<br>
+        </div>
+{% endblock %}

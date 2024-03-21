@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff4b2b;
+  color: #fff;
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.iconMenu {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.emergencyTrack {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.profileButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.iconProfile {
+  width: 30px;
+  margin-right: 5px;
+}
+
+/* Add these styles to your existing Navbar.module.css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdownContent span {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdownContent span:hover {
+  background-color: #f1f1f1;
+}

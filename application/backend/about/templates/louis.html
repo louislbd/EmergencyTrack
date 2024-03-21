@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* Resetting some default styles for better consistency */
+    body, h1, h2, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Setting a font for the page */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Header Styles */
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: #0077b5;
+        color: #fff;
+    }
+
+    header img {
+        border-radius: 50%;
+    }
+
+    /* Navigation Styles */
+    nav ul {
+        list-style: none;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #0077b5;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #000;
+    }
+
+    /* Section Styles */
+    section {
+        padding: 20px;
+    }
+
+    /* Footer Styles */
+    footer {
+        text-align: center;
+        background-color: #0077b5;
+        color: #fff;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Making sure the footer stays at the bottom even if the content is small */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    section {
+        flex: 1;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Leblond - Software Engineer</title>
+</head>
+<body>
+    <header>
+        <h1>Louis Leblond</h1>
+        <img src="images/louis.jpg" alt="Louis Leblond's Profile Picture" width="150">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/louislbd">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/louisleblond/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>About Me</h2>
+        <br>
+        <p>
+            I am a french IT student and an exchange student from France. Currently, I am serving as a Team Leader and Front-End Developer. <br>
+            I have 4 out of 5 of experience in Python development. My passion lies in software engineering and blockchain technologies. <br>
+            Feel free to connect with me on GitHub and LinkedIn to stay updated on my projects and professional journey.
+        </p>
+    </section>
+    <footer>
+        &copy; 2023 Louis Leblond
+    </footer>
+</body>
+</html>

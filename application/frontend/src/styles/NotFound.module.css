@@ -1,0 +1,32 @@
+.notFoundContainer {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.h2 {
+    font-size: 2em;
+    color: #ff4b2b; /* Use your primary color */
+}
+
+.img {
+    width: 200px; /* Adjust size as needed */
+}
+
+.p {
+    font-size: 1.2em;
+    color: #333; /* Default text color */
+}
+
+.button {
+    background-color: #ff4b2b; /* Use your primary color */
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ff2b0e; /* Darker shade of primary color on hover */
+}

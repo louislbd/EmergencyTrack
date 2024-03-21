@@ -1,0 +1,13 @@
+{% extends "email/email_base_template.html" %}
+
+{% block content %}
+<h3>New wildfire in <b>{{wildfire.county.county_name}}</b>!</h3>
+        <div class="details">
+            Details: <br>
+            Location name: {{wildfire.location_name}}<br>
+            Cause of the Fire: {{wildfire.cause_of_fire}}<br>
+            Date of the fire: {{wildfire.date_of_fire}}<br>
+            Instructions: {{wildfire.instructions_for_public}}<br>
+            Evacuation Level: {{wildfire.level_of_evacuation}}<br>
+        </div>
+{% endblock %}

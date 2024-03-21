@@ -1,0 +1,19 @@
+{% extends 'search_base.html' %}
+
+{% block content %}
+    <h2> Search for a county or a user </h2>
+
+    <form method=POST action="{% url 'search-results' %}">
+        {% csrf_token %}
+        <input style="width: 250px;" type="search" placeholder="Search" aria-label="Search" name="searched">
+        <br>
+        <label for="search_category">Choose Search Category:</label>
+        <select name="search_category" id="search_category">
+            <option value="countys" selected>Countys</option>
+            <option value="users">Users</option>
+        </select>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+
+{% endblock %}

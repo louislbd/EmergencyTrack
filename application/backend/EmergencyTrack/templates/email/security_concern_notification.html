@@ -1,0 +1,12 @@
+{% extends "email/email_base_template.html" %}
+
+{% block content %}
+<h3>New security concern in <b>{{security_concern.county.county_name}}</b>!</h3>
+        <div class="details">
+            Details: <br>
+            Location name: {{security_concern.location_name}}<br>
+            Cause of the Concern: {{security_concern.cause_of_concern}}<br>
+            Reported Date and Time: {{security_concern.reported_datetime}}<br>
+            Instructions: {{security_concern.instructions_for_public}}<br>
+        </div>
+{% endblock %}
